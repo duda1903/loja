@@ -1,0 +1,772 @@
+/*INDEX*/
+
+body{
+  background-color: #fffaf8;
+}
+
+header{
+   justify-content: space-between;
+    background-color: #dcc1b5;
+    height: 8vh;
+    width: 85vw;
+    padding-top: 0%;
+    margin-top: 1.5%;
+    border-radius: 40px;
+    margin-left: 10%;
+}
+
+#logo{
+  margin-left: -14%;
+  margin-top: -2%;
+  width: 250px;
+  height: 200px;
+  cursor: pointer;
+}
+
+#coracao{
+  position: absolute;
+  align-items: left;
+  margin-left: 88%;
+  margin-top: -3.5%;
+}
+
+#carrinho{
+  position: absolute;
+  align-items: left;
+  margin-left: 85%;
+  margin-top: -3.5%;
+}
+
+
+
+/*MENU*/
+
+.menu{
+  position: absolute;
+  margin-top: 0.75%;
+  margin-left: 4%;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu a {
+  display: block;
+  padding: 15px;
+  margin-left: 18%;
+  text-decoration: none;
+  color: #000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*barra de pesquisa*/
+
+.search-box {
+    position: absolute; /*faz com que os elementos da aplição se movem p/ qualquer lugar*/
+    width: 350px;
+    right: 70px;
+    margin-top: 10%;
+    height: 50px;
+    border-radius: 40px;
+    background-color: #fffaf9;
+    display: flex;
+    justify-content: space-between; /*joga um elemento totalmente pra esquerda e outro totalmente para direita*/
+  }
+
+  ::input-placeholder{
+    font-size: 15px;
+    font-family:'-apple-system', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serifa;
+   
+  }
+  
+  .search-text {
+    padding: 8px;
+    width: 0;
+    border: 0;
+    outline: 0;
+    border-radius: 40px;
+    box-sizing: border-box;
+    font-size: 13px;
+    transition: 0.4s;
+  }
+  
+  #btn{
+    margin-top: 5px;
+    padding: 8px 12px;
+    width: 25%;
+    height: 85%;
+    background-color: #f0d0c2;
+    font-size:14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-box:hover > .search-text{
+    width: 300px;
+    background-color: #f0d0c2;
+    padding-left: 20px;
+  }
+
+  #btn:hover {
+    background-color: #f7e2e1;
+    justify-content: space-between;
+  }
+
+  /*BANNER*/
+
+  #banner{
+    box-shadow: 0 0 30px 10px rgb(167, 167, 167);
+    margin-top: 15%;
+    width: 65%;
+    height: 50%;
+    margin-left: 20%;
+    border-radius: 2%;
+    cursor: pointer;
+    transition: .4s;
+  }
+
+  #banner:hover{
+    margin-top: 14%;
+    width: 68%;
+    margin-left: 17%;
+    opacity: 0.95;
+  }
+  
+  /*-----------------------------*/
+
+ 
+  #truck{
+    width: 7%; 
+    height: 7%;
+    margin-left:22%;
+    margin-top: 12%;
+  }
+
+  #card{
+    width: 3%; 
+    height: 3%;
+    margin-left: 22%;
+    margin-top: 12%;
+  }
+
+  #lock{
+    width: 2.5%; 
+    height: 2.5%;
+    margin-left:22%;
+    margin-top: 12%;
+  }
+
+  .legenda1{
+    margin-left: 20%;
+  }
+
+  .legenda2{
+    margin-left: 47%;
+    margin-top: -2%;
+  }
+
+  .legenda2-2{
+    margin-top: 1;
+    margin-left: 47%;
+  }
+
+  .legenda3{
+    margin-left: 72%;
+    margin-top: -1.75%;
+  }
+
+  .legenda3-3{
+    margin-left: 72%;
+    margin-top: 0%;
+  }
+  
+  /*FOOTER*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap'); 
+/*código das fontes importadas*/
+
+
+* {
+font-family: 'inter', sans-serif;
+margin:0;
+padding: 0;
+box-sizing: border-box;
+letter-spacing: 1px;
+}
+
+main{
+  height:20vh;
+}
+
+footer {
+  width: 100%;
+  color: black;
+}
+
+.footer-link{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#logo-footer{
+  position: absolute;
+  margin-top:-2%;
+  margin-left: -3%;
+  width:12%;
+  height:12%;
+}
+
+#footer_content {
+  background-color: #f0d0c2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 3.5rem;
+}
+
+
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  gap:0.75rem;
+  list-style: none;
+}
+
+.footer-list .footer-link{
+  color: black;
+  transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover{
+  color: #7f37c9;
+}
+
+
+#footer_copyright{
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
+}
+
+/*Typical devices breakpoint
+---------------------------------
+pequenas telas: até 600px
+celular: de 600px até 768px
+desktop: 992px até 1200px
+grandes telas: acima de 1200px
+*/
+
+@media screen and (max-width: 768px){
+  header{
+    width: 50vw;   /*largura*/
+    height: 30vh; /*altura*/
+  }
+
+  #logo-footer{
+    display: none;
+  }
+
+  .search-box{ 
+    margin-top: 15%;
+  }
+
+  #footer_content{
+    grid-template-columns: repeat(2, 1fr);
+    gap:2rem;
+    justify-content: center;
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*PÁGINA 2*/
+h2{
+color: #dcc1b5;
+margin-top:8%;
+margin-bottom: -7%;
+margin-left: 4%;
+font-size: 30px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+transition: .4s;
+cursor: pointer;
+}
+
+
+/*IMAGENS*/
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  
+}
+.left-div {
+margin: 2%;
+width: 28%;
+display: inline-block;
+padding: 0 2vw;
+margin-top: 10%;
+cursor: pointer;
+}
+
+#img1{
+border-radius: 5%;
+box-shadow: 0 0 8px 10px rgb(167, 167, 167);
+margin-left: 12%;
+transition: .4s;
+}
+
+#img1:hover{
+width: 350px;
+height: 350px;
+}
+
+.right-div {
+  margin: 0%;
+  width: 30%;
+  cursor: pointer;
+  margin-top: 8%;
+  display: inline-block;
+  padding: 0 2vw;
+}
+
+#img2{
+box-shadow: 0 0 10px 12px rgb(167, 167, 167);
+border-radius: 5%;
+margin-left: 14%;
+transition: .4s;
+}
+
+#img2:hover{
+width: 350px;
+height: 350px;
+}
+
+.middle-div {
+  margin: 3%;
+  width: 28%;
+  cursor: pointer;
+  margin-top: 8%;
+  display: inline-block;
+  padding: 0 2vw;
+}
+
+#img3{
+box-shadow: 0 0 10px 12px rgb(167, 167, 167);
+border-radius: 5%;
+margin-left: 18%;
+transition: .4s;
+}
+
+#img3:hover{
+width: 350px;
+height: 350px;
+}
+
+#img4{
+box-shadow: 0 0 10px 12px rgb(167, 167, 167);
+border-radius: 5%;
+margin-left: 18%;
+transition: .4s;
+}
+
+#img4:hover{
+width: 350px;
+height: 350px;
+}
+
+#img5{
+box-shadow: 0 0 10px 12px rgb(167, 167, 167);
+border-radius: 5%;
+margin-left: 18%;
+transition: .4s;
+}
+
+#img5:hover{
+width: 350px;
+height: 350px;
+}
+
+#img6:hover{
+width: 350px;
+height: 350px;
+}
+
+#img6{
+box-shadow: 0 0 10px 12px rgb(167, 167, 167);
+border-radius: 5%;
+margin-left: 18%;
+transition: .4s;
+}
+
+#comprarp2{
+position: absolute;
+margin-top: 1%;
+cursor: pointer;
+text-align: center;
+margin-left: 10%;
+color: black;
+background-color:#f0d0c2;
+border: none;
+border-radius: 10%;
+width: 7%;
+height: 4%;
+}
+
+#comprarp22{
+  position: absolute;
+  margin-top: 1%;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 7%;
+  color: black;
+  background-color:#f0d0c2;
+  border: none;
+  border-radius: 10%;
+  width: 7%;
+  height: 4%;
+  }
+
+  #comprarp23{
+    position: absolute;
+    margin-top: 1%;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 9%;
+    color: black;
+    background-color:#f0d0c2;
+    border: none;
+    border-radius: 10%;
+    width: 7%;
+    height: 4%;
+    }
+
+    #comprarp24{
+      position: absolute;
+      margin-top: 1%;
+      cursor: pointer;
+      text-align: center;
+      margin-left: 8%;
+      color: black;
+      background-color:#f0d0c2;
+      border: none;
+      border-radius: 10%;
+      width: 7%;
+      height: 4%;
+      }
+  
+#roupas{
+font-family: 'Times New Roman', Times, serif;
+font-size: x-large;
+text-align: center;
+margin-top: 3%;
+}
+#valor{
+font-family: 'Times New Roman', Times, serif;
+color: rgb(209, 0, 80);
+font-size: x-large;
+text-align: center;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*PÁGINA 3*/
+
+/*IMAGENS*/
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+.left-div {
+  margin: 2%;
+  width: 28%;
+  display: inline-block;
+  padding: 0 3vw;
+  margin-top: 10%;
+  cursor: pointer;
+}
+.right-div {
+margin: 2%;
+  width: 28%;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 2vw;
+  margin-top: 10%;
+}
+
+.middle-div {
+  margin: 2%;
+  width: 28%;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 2vw;
+  margin-top: 10%;
+}
+
+#img1{
+border-radius: 5%;
+box-shadow: 0 0 8px 10px rgb(167, 167, 167);
+margin-left: 12%;
+transition: .4s;
+}
+
+#img1:hover{
+width: 350px;
+height: 350px;
+}
+
+#img2{
+box-shadow: 0 0 10px 12px rgb(167, 167, 167);
+border-radius: 5%;
+margin-left: 14%;
+transition: .4s;
+}
+
+#img2:hover{
+width: 350px;
+height: 350px;
+}
+
+#img3{
+box-shadow: 0 0 10px 12px rgb(167, 167, 167);
+border-radius: 5%;
+margin-left: 18%;
+transition: .4s;
+}
+
+#img3:hover{
+width: 350px;
+height: 350px;
+}
+
+#img4{
+box-shadow: 0 0 10px 12px rgb(167, 167, 167);
+border-radius: 5%;
+margin-left: 18%;
+transition: .4s;
+}
+
+#img4:hover{
+width: 350px;
+height: 350px;
+}
+
+#img5{
+box-shadow: 0 0 10px 12px rgb(167, 167, 167);
+border-radius: 5%;
+margin-left: 18%;
+transition: .4s;
+}
+
+#img5:hover{
+width: 350px;
+height: 350px;
+}
+
+#img6:hover{
+width: 350px;
+height: 350px;
+}
+
+#img6{
+box-shadow: 0 0 10px 12px rgb(167, 167, 167);
+border-radius: 5%;
+margin-left: 18%;
+transition: .4s;
+}
+
+#comprar{
+position: absolute;
+margin-top: 3%;
+cursor: pointer;
+text-align: left;
+margin-left: 70%;
+color: #ffffff;
+border-radius: 10%;
+width: 40%;
+}
+
+#Comprarp3{
+  position: absolute;
+  margin-top: 1%;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 10%;
+
+  color: black;
+  background-color:#f0d0c2;
+  border: none;
+  border-radius: 10%;
+  width: 7%;
+  height: 4%;
+  }
+  
+
+#roupas{
+font-family: 'Times New Roman', Times, serif;
+font-size: x-large;
+text-align: center;
+margin-top: 3%;
+}
+
+#valor{
+font-family: 'Times New Roman', Times, serif;
+color: rgb(218,13,91);
+font-size: x-large;
+text-align: center;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*PÁGINA 4*/
+h2{
+  margin-left: 40px;
+  margin-top: 100px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color:#f5b599;
+  text-align: center;
+  transition: .4s;
+}
+
+h2:hover{
+  font-size:xx-large;
+
+
+}
+
+#para1{
+  margin-top: 10%;
+  margin-left: 20px;
+  text-align:justify; 
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align:center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#p4{
+  margin-top: 10%;
+}
+
+#duda{
+  margin-top: -30%;
+  cursor: pointer;
+  transition: .4s;
+}
+
+#duda:hover{
+  width:360px;
+  height:360px;
+  opacity: .9;
+}
+
+#gaby{
+  cursor: pointer;
+  position: absolute;
+  margin-left: 28%;
+  margin-top: -21.25%; 
+  transition: .8s; 
+}
+
+#gaby:hover{
+  width:360px;
+  height:360px;
+  opacity: .9;
+}
+
+#dassa{
+  cursor: pointer;
+  position: absolute;
+  margin-left: 48%;
+  margin-top: -31.5%; 
+  transition: .4s; 
+}
+
+#dassa:hover{
+  width:360px;
+  height:360px;
+  opacity: .9;
+}
+
+#isa{
+  cursor: pointer;
+  position: absolute;
+  margin-left: 38%;
+  margin-top: -30.9%;
+  transition: .4s; 
+}
+
+#isa:hover{
+  width:360px;
+  height:360px;
+  opacity: .9;
+}
+
+#nome1{
+  cursor: pointer;
+  position: absolute;
+  margin-left: 12.5%;
+  margin-top: -18%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  transition: .2s;
+}
+
+#nome1:hover{
+  color:#f5b599
+}
+
+#nome2{
+  cursor: pointer;
+  position: absolute;
+  margin-left: 35%;
+  margin-top: -18%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  transition: .2s;
+}
+
+#nome2:hover{
+  color:#f5b599
+}
+
+
+#nome3{
+  cursor: pointer;
+  position: absolute;
+  margin-left: 59%;
+  margin-top: -18%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  transition: .2s;
+}
+
+#nome3:hover{
+  color:#f5b599
+}
+
+
+#nome4{
+  cursor: pointer;
+  position: absolute;
+  margin-left: 83%;
+  margin-top: -17.5%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  transition: .2s;
+}
+
+#nome4:hover{
+  color:#f5b599
+}
